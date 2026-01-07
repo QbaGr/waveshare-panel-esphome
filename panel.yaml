@@ -1,0 +1,60 @@
+packages:
+  waveshare: 
+    url: https://github.com/inytar/waveshare-esp32-s3-touch-lcd-7-esphome
+    files: [ waveshare-esp32-s3-touch-lcd-7.yaml ]
+    refresh: 0s
+
+esphome:
+  name: panel-waveshare-przedpokoj
+  friendly_name: Panel Waveshare Przedpokoj
+
+esp32:
+  board: esp32-s3-devkitc-1
+  framework:
+    type: esp-idf
+
+logger:
+
+api:
+
+ota:
+  - platform: esphome
+    password: "91d9421d57eb42aadd5db22e3f5b7b5b"
+
+wifi:
+  ssid: "Benny"
+  password: "Moulder123"
+  ap:
+    ssid: "Panel-Waveshare-Przedpokoj"
+    password: "ZI0FtnooSIfd"
+
+captive_portal:
+
+# Czas z Home Assistant
+time:
+  - platform: homeassistant
+    id: homeassistant_time
+    on_time_sync:
+      - script.execute: time_update
+    on_time:
+      - seconds: 0
+        then:
+          - script.execute: time_update
+
+# Prosty interfejs - tylko zegar
+lvgl:
+  widgets:
+    - label:
+        id: clock_label
+        align: CENTER
+        text_font: montserrat_48
+        text:
+          time_format: "%H:%M"
+
+script:
+  - id: time_update
+    then:
+      - lvgl.label.update:
+          id: clock_label
+          text:
+            time_format: "%H:%M"
