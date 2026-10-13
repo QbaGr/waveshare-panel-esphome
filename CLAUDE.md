@@ -28,5 +28,16 @@ Salon, kuchnia, sypialnia, przedpokój, łazienka, toaleta, piętro, pokój dzie
 ## Komputer
 - Laptop Dell z Windows i Chrome (rozszerzenie Claude in Chrome). Rozmowy „lokalne” w aplikacji Claude działają na nim; rozmowy w chmurze nie mają do niego dostępu.
 
+## Historia wcześniejszych rozmów (skrót)
+- **wrz 2026** – podłączenie Home Assistant MCP do Claude; naprawa czujników Aqara (xiaomi_miot, 4/5 odzyskane; Tuya Local zainstalowane, nieskonfigurowane); polskie stacje radiowe w Music Assistant; dashboard „Dom” (17 stref, kamery, media, Kiosk Mode).
+- **1 paź** – sprawdzenie sieci i HA.
+- **3 paź** – tablet w łazience (rk3566): panel startowy „Kiosk Gold”, kafle responsywne (% ekranu + minimum px).
+- **7–9 paź** – IPTV: listy M3U dla dekoderów Zgemma, skrypt „IPTV: Pobierz i przefiltruj listę” (tylko polskie kanały), plik do pobrania w dashboardzie Media (blok „IPTV – download only”); dane dostawcy trzymane w pomocnikach `input_text` w HA.
+- **8–9 paź** – automatyzacja drzwi przesuwnych.
+- **9 paź** – dashboard `kiosk-gold-test`: kamery 57% wysokości, Wjazd na `camera.kamera_wjazd`.
+- **9–10 paź** – światło ganek/przedpokój/domek na czujnikach ruchu; ganek włącza się dopiero, gdy słońce jest 6° pod horyzontem.
+- **10 paź** – brama: lista „Ostatnie zdarzenia przy bramie” jako oś czasu z kolorowymi ikonami (panel); problem z przeładowaniem HA (Docker na hoście, pomógł restart zasilania).
+- **13 paź** – porządki: złącza Claude (działają Gmail, GitHub, Spotify, Home Assistant MCP), pamięć w ustawieniach włączona, stare rozmowy zarchiwizowane, ten plik.
+
 ## To repozytorium
 - `panel.yaml` – konfiguracja ESPHome panelu Waveshare.
