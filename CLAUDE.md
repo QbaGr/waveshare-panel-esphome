@@ -6,6 +6,13 @@ Ten plik Claude Code czyta na starcie każdej rozmowy. Dopisuj tu rzeczy, które
 - Zawsze po polsku, krótko i konkretnie.
 - Przed usuwaniem czegokolwiek (encje, automatyzacje, dashboardy, dodatki) – pokaż listę i poczekaj na OK.
 
+## Zapisywanie pamięci (rób to sam, bez pytania)
+- Po zakończeniu każdej konkretnej rzeczy (nowa/zmieniona automatyzacja, dashboard, urządzenie, naprawa, ważna decyzja) dopisz **jedną linijkę** w sekcji „Historia wcześniejszych rozmów”: data + co zrobiono + nazwy encji/dashboardów, jeśli ważne.
+- Nowe stałe fakty (nowe urządzenie, zmiana IP, nowy dodatek, preferencja) wpisz w odpowiednią sekcję wyżej.
+- Zapisz commitem i wypchnij od razu na `main` (`git pull --rebase origin main`, commit, `git push origin HEAD:main`). Nie twórz PR do tego pliku.
+- Nigdy nie zapisuj tu haseł, tokenów, loginów ani kluczy – wpisz tylko, gdzie są (np. „dane IPTV w input_text w HA”).
+- Plik ma być krótki: gdy historia przekroczy ~40 linijek, połącz najstarsze wpisy w zwięzłe podsumowania miesięczne.
+
 ## Home Assistant
 - Home Assistant OS na komputerze x86 (`generic-x86-64`), IP w sieci domowej: `192.168.0.153`, strefa czasowa Europe/Warsaw, język PL.
 - Sterowanie z Claude: złącze **Home Assistant MCP** (działa z chmury, dostęp z zewnątrz przez Cloudflared / Duck DNS).
