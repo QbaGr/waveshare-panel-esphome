@@ -45,6 +45,7 @@ Salon, kuchnia, sypialnia, przedpokój, łazienka, toaleta, piętro, pokój dzie
 - **9–10 paź** – światło ganek/przedpokój/domek na czujnikach ruchu; ganek włącza się dopiero, gdy słońce jest 6° pod horyzontem.
 - **10 paź** – brama: lista „Ostatnie zdarzenia przy bramie” jako oś czasu z kolorowymi ikonami (panel); problem z przeładowaniem HA (Docker na hoście, pomógł restart zasilania).
 - **13 paź** – porządki: złącza Claude (działają Gmail, GitHub, Spotify, Home Assistant MCP), pamięć w ustawieniach włączona, stare rozmowy zarchiwizowane, ten plik.
+- **13 paź** – wzór wniosku urlopowego (PDF A4, `wydruki/wniosek_urlopowy.pdf` na gałęzi `ccr-8ed45c88-cs2lg3`); drukarki Epson brak w HA – z chmury drukować się nie da (opcja: e-mail Epson Connect).
 
 ## To repozytorium
 - `panel.yaml` – konfiguracja ESPHome panelu Waveshare.
