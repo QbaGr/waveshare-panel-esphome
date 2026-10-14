@@ -36,6 +36,7 @@ Salon, kuchnia, sypialnia, przedpokój, łazienka, toaleta, piętro, pokój dzie
 
 ## Komputer
 - Laptop Dell z Windows i Chrome (rozszerzenie Claude in Chrome). Rozmowy „lokalne” w aplikacji Claude działają na nim; rozmowy w chmurze nie mają do niego dostępu.
+- Jak przejść na pracę lokalną: aplikacja Claude na laptopie → zakładka **Code** → nowa sesja, środowisko **Lokalnie / Local** (nie Cloud) i wybrany folder. Sesja w chmurze sama się nie przełączy – trzeba zacząć nową.
 
 ## Historia wcześniejszych rozmów (skrót)
 - **wrz 2026** – podłączenie Home Assistant MCP do Claude; naprawa czujników Aqara (xiaomi_miot, 4/5 odzyskane; Tuya Local zainstalowane, nieskonfigurowane); polskie stacje radiowe w Music Assistant; dashboard „Dom” (17 stref, kamery, media, Kiosk Mode).
