@@ -50,6 +50,7 @@ Salon, kuchnia, sypialnia, przedpokój, łazienka, toaleta, piętro, pokój dzie
 - **13 paź** – wzór wniosku urlopowego (PDF A4, `wydruki/wniosek_urlopowy.pdf` na gałęzi `ccr-8ed45c88-cs2lg3`); drukarki Epson brak w HA – z chmury drukować się nie da (opcja: e-mail Epson Connect).
 - **14 paź** – panel ogrzewania podłogowego Warmtec: nie da się dodać przez Tuya (firmware Beca); opcje: aplikacja My BecaSmart, ESPHome na module ESP albo wymiana sterownika na wersję Tuya.
 - **14 paź** – Kiosk Gold (`kiosk-gold-test`): kafel Kosiarka zastąpiony kaflem lampy łazienkowej (`light.yeelink_ceiling4_2d35_main_light` + Ambilight; jasność/barwa + przyciski Jasno/Ciepło/Noc przez skrypt `script.lampa_lazienka_tryb`); potem 2. wiersz „Góra” = Ambilight (jasność + kolor). Automatyka „po wejściu 30%” jest w aplikacji Yeelight, nie w HA.
+- **14 paź** – Kiosk Gold: kafel Klima Garaż → „Światła w domu” (grupa `light.swiatla_dom`, licznik + strefy + „Wyłącz wszystkie”); kafel odkurzacza z baterią, ostatnim sprzątaniem i czasem (pomocniki `input_datetime.odkurzacz_*`, `input_number.odkurzacz_czas_ostatniego_sprzatania`, automatyzacja „Odkurzacz – zapisz ostatnie sprzątanie”).
 
 ## To repozytorium
 - `panel.yaml` – konfiguracja ESPHome panelu Waveshare.
