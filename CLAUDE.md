@@ -30,6 +30,7 @@ Salon, kuchnia, sypialnia, przedpokój, łazienka, toaleta, piętro, pokój dzie
 - **Panele/ekrany**: Panel 1 – Brama i Pogoda, Panel Salon (ESPHome, Waveshare), tablet rk3566 w łazience (dashboard „Kiosk Gold”).
 - **Media**: TV Sony BRAVIA XR-75X90J, Philips TV (Ambilight), Radio – Łazienka, Spotify.
 - **Inne**: robot odkurzający, kosiarka, klimatyzacja (garaż, pokój Milenki), oświetlenie ganek/przedpokój/domek na czujnikach ruchu.
+- **Ogrzewanie podłogowe (łazienka)**: panel Warmtec (oprogramowanie Beca, stara aplikacja WARMTEC wycofana), IP 192.168.0.34, MAC cc:50:e3:4c:b9:e0 (ESP) – **nie jest w HA**, Tuya go nie widzi.
 - Telefon: Samsung SM-S928B (powiadomienia `notify`).
 
 ## Komputer
@@ -46,6 +47,7 @@ Salon, kuchnia, sypialnia, przedpokój, łazienka, toaleta, piętro, pokój dzie
 - **10 paź** – brama: lista „Ostatnie zdarzenia przy bramie” jako oś czasu z kolorowymi ikonami (panel); problem z przeładowaniem HA (Docker na hoście, pomógł restart zasilania).
 - **13 paź** – porządki: złącza Claude (działają Gmail, GitHub, Spotify, Home Assistant MCP), pamięć w ustawieniach włączona, stare rozmowy zarchiwizowane, ten plik.
 - **13 paź** – wzór wniosku urlopowego (PDF A4, `wydruki/wniosek_urlopowy.pdf` na gałęzi `ccr-8ed45c88-cs2lg3`); drukarki Epson brak w HA – z chmury drukować się nie da (opcja: e-mail Epson Connect).
+- **14 paź** – panel ogrzewania podłogowego Warmtec: nie da się dodać przez Tuya (firmware Beca); opcje: aplikacja My BecaSmart, ESPHome na module ESP albo wymiana sterownika na wersję Tuya.
 
 ## To repozytorium
 - `panel.yaml` – konfiguracja ESPHome panelu Waveshare.
