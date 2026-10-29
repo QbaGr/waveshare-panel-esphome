@@ -57,7 +57,7 @@ Salon, kuchnia, sypialnia, przedpokój, łazienka, toaleta, piętro, pokój dzie
 
 - **29 paź** – Kiosk Gold: z kafla Brama Garaż usunięta temperatura/wilgotność garażu (nachodziła na „od X h”). Kafel Kamera ganek (`camera.chuangmi_ipc020_5503_camera_control`, Xiaomi z chmury) pokazuje tylko miniaturę ostatniego nagrania ruchu z Mi Cloud, nie obraz na żywo – stało od 05:54.
 - **29 paź** – Kiosk Gold: temperatura garażu wróciła na kafel Brama Garaż (sama °C, prawy górny róg); kafel Piec Garaż → nazwa „Piec”, opis = sama temperatura (stan pokazuje przełącznik).
-- **29 paź** – światło ganek (czujniki ganek wejście + schody, gasi gdy oba bez ruchu; bez warunku słońca) i przedpokój osobno: zapalanie 7:00–22:30, gaszenie po 5 min do 18:00 / 2 min po 18:00; po restarcie HA / przeładowaniu automatyzacji gaszą światło przy braku ruchu (wcześniej edycja automatyzacji zostawiała ganek zapalony).
+- **29 paź** – światło ganek (czujniki ganek wejście + schody, gasi gdy oba bez ruchu; bez warunku słońca) i przedpokój osobno; zamknięcie drzwi przesuwnych od razu gasi ganek: zapalanie 7:00–22:30, gaszenie po 5 min do 18:00 / 2 min po 18:00; po restarcie HA / przeładowaniu automatyzacji gaszą światło przy braku ruchu (wcześniej edycja automatyzacji zostawiała ganek zapalony).
 - **29 paź** – ganek: tryb ręczny pod przycisk Xiaomi/Aqara (ZHA, jeszcze niesparowany): `input_boolean.ganek_tryb_reczny_przycisk`, skrypt `script.ganek_przycisk_reczny` (7:00–22:30 = zgaś i blokada automatyki do północy, po 22:30 = świeci do północy, 2. wciśnięcie = powrót do automatyki), automatyzacja "Ganek - koniec trybu ręcznego" (00:00 i 7:00). Po sparowaniu przycisku dodać automatyzację: wciśnięcie → skrypt.
 
 ## To repozytorium
