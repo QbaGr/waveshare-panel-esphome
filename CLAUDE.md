@@ -54,5 +54,7 @@ Salon, kuchnia, sypialnia, przedpokój, łazienka, toaleta, piętro, pokój dzie
 - **14 paź** – Kiosk Gold: kafel Klima Garaż → „Światła w domu” (grupa `light.swiatla_dom`, licznik + strefy + „Wyłącz wszystkie”); kafel odkurzacza z baterią, ostatnim sprzątaniem i czasem (pomocniki `input_datetime.odkurzacz_*`, `input_number.odkurzacz_czas_ostatniego_sprzatania`, automatyzacja „Odkurzacz – zapisz ostatnie sprzątanie”).
 - **14 paź** – Kiosk Gold ucinał dół o ~1 cm: kamery zmniejszone do `calc(100vh - 552px)` (było 512px), nowe kafle zablokowane na 17vh.
 
+- **29 paź** – Kiosk Gold: z kafla Brama Garaż usunięta temperatura/wilgotność garażu (nachodziła na „od X h”). Kafel Kamera ganek (`camera.chuangmi_ipc020_5503_camera_control`, Xiaomi z chmury) pokazuje tylko miniaturę ostatniego nagrania ruchu z Mi Cloud, nie obraz na żywo – stało od 05:54.
+
 ## To repozytorium
 - `panel.yaml` – konfiguracja ESPHome panelu Waveshare.
