@@ -46,7 +46,7 @@ Salon, kuchnia, sypialnia, przedpokój, łazienka, toaleta, piętro, pokój dzie
 - **7–9 paź** – IPTV: listy M3U dla dekoderów Zgemma, skrypt „IPTV: Pobierz i przefiltruj listę” (tylko polskie kanały), plik do pobrania w dashboardzie Media (blok „IPTV – download only”); dane dostawcy trzymane w pomocnikach `input_text` w HA.
 - **8–9 paź** – automatyzacja drzwi przesuwnych.
 - **9 paź** – dashboard `kiosk-gold-test`: kamery 57% wysokości, Wjazd na `camera.kamera_wjazd`.
-- **9–10 paź** – światło ganek/przedpokój/domek na czujnikach ruchu; ganek włącza się dopiero, gdy słońce jest 6° pod horyzontem.
+- **9–10 paź** – światło ganek/przedpokój/domek na czujnikach ruchu; ganek włączał się, gdy słońce było 6° pod horyzontem (od 29 paź bez tego warunku).
 - **10 paź** – brama: lista „Ostatnie zdarzenia przy bramie” jako oś czasu z kolorowymi ikonami (panel); problem z przeładowaniem HA (Docker na hoście, pomógł restart zasilania).
 - **13 paź** – porządki: złącza Claude (działają Gmail, GitHub, Spotify, Home Assistant MCP), pamięć w ustawieniach włączona, stare rozmowy zarchiwizowane, ten plik.
 - **13 paź** – wzór wniosku urlopowego (PDF A4, `wydruki/wniosek_urlopowy.pdf` na gałęzi `ccr-8ed45c88-cs2lg3`); drukarki Epson brak w HA – z chmury drukować się nie da (opcja: e-mail Epson Connect).
@@ -57,6 +57,7 @@ Salon, kuchnia, sypialnia, przedpokój, łazienka, toaleta, piętro, pokój dzie
 
 - **29 paź** – Kiosk Gold: z kafla Brama Garaż usunięta temperatura/wilgotność garażu (nachodziła na „od X h”). Kafel Kamera ganek (`camera.chuangmi_ipc020_5503_camera_control`, Xiaomi z chmury) pokazuje tylko miniaturę ostatniego nagrania ruchu z Mi Cloud, nie obraz na żywo – stało od 05:54.
 - **29 paź** – Kiosk Gold: temperatura garażu wróciła na kafel Brama Garaż (sama °C, prawy górny róg); kafel Piec Garaż → nazwa „Piec”, opis = sama temperatura (stan pokazuje przełącznik).
+- **29 paź** – światło ganek i przedpokój działają niezależnie (ganek tylko od `binary_sensor.czujnik_ruchu_ganek_wejscie_zajetosc`, bez warunku słońca): zapalanie 7:00–22:30, gaszenie po 5 min do 18:00 / 2 min po 18:00; po restarcie HA / przeładowaniu automatyzacji gaszą światło przy braku ruchu (wcześniej edycja automatyzacji zostawiała ganek zapalony).
 
 ## To repozytorium
 - `panel.yaml` – konfiguracja ESPHome panelu Waveshare.
