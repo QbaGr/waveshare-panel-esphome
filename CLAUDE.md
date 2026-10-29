@@ -56,6 +56,7 @@ Salon, kuchnia, sypialnia, przedpokój, łazienka, toaleta, piętro, pokój dzie
 - **14 paź** – Kiosk Gold ucinał dół o ~1 cm: kamery zmniejszone do `calc(100vh - 552px)` (było 512px), nowe kafle zablokowane na 17vh.
 
 - **29 paź** – Kiosk Gold: z kafla Brama Garaż usunięta temperatura/wilgotność garażu (nachodziła na „od X h”). Kafel Kamera ganek (`camera.chuangmi_ipc020_5503_camera_control`, Xiaomi z chmury) pokazuje tylko miniaturę ostatniego nagrania ruchu z Mi Cloud, nie obraz na żywo – stało od 05:54.
+- **29 paź** – Kiosk Gold: temperatura garażu wróciła na kafel Brama Garaż (sama °C, prawy górny róg); kafel Piec Garaż → nazwa „Piec”, opis = sama temperatura (stan pokazuje przełącznik).
 
 ## To repozytorium
 - `panel.yaml` – konfiguracja ESPHome panelu Waveshare.
