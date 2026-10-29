@@ -32,6 +32,7 @@ Salon, kuchnia, sypialnia, przedpokój, łazienka, toaleta, piętro, pokój dzie
 - **Lampa łazienka dół**: Yeelight ceiling4 (`light.yeelink_ceiling4_2d35_main_light`, `..._ambient_light`), tryb nocny = `yeelight.set_mode` moonlight.
 - **Inne**: robot odkurzający, kosiarka, klimatyzacja (garaż, pokój Milenki), oświetlenie ganek/przedpokój/domek na czujnikach ruchu.
 - **Ogrzewanie podłogowe (łazienka)**: panel Warmtec (oprogramowanie Beca, stara aplikacja WARMTEC wycofana), IP 192.168.0.34, MAC cc:50:e3:4c:b9:e0 (ESP) – **nie jest w HA**, Tuya go nie widzi.
+- Tablet rk3566 (Kiosk Gold): kamery tylko jako zdjęcia co ~10 s (`camera_view: auto`) – tryb `live` mocno zamulał tablet, nie włączać.
 - Telefon: Samsung SM-S928B (powiadomienia `notify`).
 
 ## Komputer
