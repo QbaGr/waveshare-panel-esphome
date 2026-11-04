@@ -64,6 +64,7 @@ Salon, kuchnia, sypialnia, przedpokój, łazienka, toaleta, piętro, pokój dzie
 - **29 paź** – przycisk w sypialni (Aqara WXKG03LM: tylko 1x/2x/przytrzymanie, brak 3x): przytrzymanie przy zgaszonych LED = cisza w łazience na dole do północy (`script.lazienka_dol_cisza_do_polnocy`, `input_boolean.lazienka_dol_cisza_do_polnocy_przycisk_sypialnia_3x`): pauza Spotify rk3566, blokada startów harmonogramu, watchdogów i wznawiania po restarcie HA; reset o 00:00 w „Lazienka - reset flagi ruchu o polnocy”.
 - **4 lis** – kontrola HA (2026.10.4, restart ok. 8:15): pogoda `weather.forecast_dom` niedostępna (met.no zwracało 502) – odświeżona ręcznie, działa; Spotify łazienka o 8:30 „Not found” (rk3566 jeszcze niewidoczny po restarcie), watchdog sprawdza tylko widoczność, nie granie – playlista włączona ręcznie. Frigate po restarcie chwilę nieosiągalny.
 - **4 lis** – Music Assistant: dostawca Fully Kiosk przestawiony na 192.168.0.100 (+hasło), nowy odtwarzacz `media_player.fully_kiosk_192_168_0_100` działa (test radio OK); stare wpisy .115 usunięte. ESP garaż (`media_player.garaz_esp_garaz`) jeszcze nie w MA (brak dostawcy „Home Assistant MediaPlayers”).
+- **4 lis** – dashboard „Malina – dźwięk” (`malina-dzwiek`): sekcja „Narastanie muzyki” – włącznik automatyzacji `automation.lazienka_gora_plynne_podglasnianie_fade_in`, głośność docelowa `input_number.lazienka_gora_glosnosc_docelowa`, nowy `input_number.lazienka_gora_czas_narastania` (1–30 s, domyślnie 4 s) podpięty do automatyzacji.
 
 ## To repozytorium
 - `panel.yaml` – konfiguracja ESPHome panelu Waveshare.
