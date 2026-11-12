@@ -38,6 +38,7 @@ Salon, kuchnia, sypialnia, przedpokój, łazienka, toaleta, piętro, pokój dzie
 
 ## Komputer
 - Laptop Dell z Windows i Chrome (rozszerzenie Claude in Chrome). Rozmowy „lokalne” w aplikacji Claude działają na nim; rozmowy w chmurze nie mają do niego dostępu.
+- Z chmury przez HA MCP **nie da się** czytać/zapisywać plików w `/config` (File editor API zwraca 420, terminal przez MCP nie działa) ani łączyć z urządzeniami w LAN (np. Zgemmy) – nowe skrypty `.py` i instalacja wtyczek na dekoderach tylko z sesji lokalnej.
 - Jak przejść na pracę lokalną: aplikacja Claude na laptopie → zakładka **Code** → nowa sesja, środowisko **Lokalnie / Local** (nie Cloud) i wybrany folder. Sesja w chmurze sama się nie przełączy – trzeba zacząć nową.
 
 ## Historia wcześniejszych rozmów (skrót)
@@ -65,6 +66,7 @@ Salon, kuchnia, sypialnia, przedpokój, łazienka, toaleta, piętro, pokój dzie
 - **4 lis** – kontrola HA (2026.10.4, restart ok. 8:15): pogoda `weather.forecast_dom` niedostępna (met.no zwracało 502) – odświeżona ręcznie, działa; Spotify łazienka o 8:30 „Not found” (rk3566 jeszcze niewidoczny po restarcie), watchdog sprawdza tylko widoczność, nie granie – playlista włączona ręcznie. Frigate po restarcie chwilę nieosiągalny.
 - **4 lis** – Music Assistant: dostawca Fully Kiosk przestawiony na 192.168.0.100 (+hasło), nowy odtwarzacz `media_player.fully_kiosk_192_168_0_100` działa (test radio OK); stare wpisy .115 usunięte. ESP garaż (`media_player.garaz_esp_garaz`) jeszcze nie w MA (brak dostawcy „Home Assistant MediaPlayers”).
 - **4 lis** – dashboard „Malina – dźwięk” (`malina-dzwiek`): sekcja „Narastanie muzyki” – włącznik automatyzacji `automation.lazienka_gora_plynne_podglasnianie_fade_in`, głośność docelowa `input_number.lazienka_gora_glosnosc_docelowa`, nowy `input_number.lazienka_gora_czas_narastania` (1–30 s, domyślnie 4 s) podpięty do automatyzacji.
+- **12 lis** – prośba: Zgemma .84 bukiet „iptv2” + VOD pod niebieskim + seriale – z chmury niewykonalne (brak dostępu do plików HA i LAN), do zrobienia w sesji lokalnej.
 
 ## To repozytorium
 - `panel.yaml` – konfiguracja ESPHome panelu Waveshare.
