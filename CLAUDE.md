@@ -68,6 +68,7 @@ Salon, kuchnia, sypialnia, przedpokój, łazienka, toaleta, piętro, pokój dzie
 - **4 lis** – dashboard „Malina – dźwięk” (`malina-dzwiek`): sekcja „Narastanie muzyki” – włącznik automatyzacji `automation.lazienka_gora_plynne_podglasnianie_fade_in`, głośność docelowa `input_number.lazienka_gora_glosnosc_docelowa`, nowy `input_number.lazienka_gora_czas_narastania` (1–30 s, domyślnie 4 s) podpięty do automatyzacji.
 - **12 lis** – Kiosk Gold (widok `ramka`): godzina i pogoda stały na tablecie, choć w HA były aktualne (`sensor.kafel_zegar`, `weather.forecast_dom`) – zawieszona przeglądarka (wolne RAM ~450 MB), restart przeglądarki Fully (`button.rk3566_uruchom_ponownie_przegladarke`).
 - **12 lis** – prośba: Zgemma .84 bukiet „iptv2” + VOD pod niebieskim + seriale – z chmury niewykonalne (brak dostępu do plików HA i LAN), do zrobienia w sesji lokalnej.
+- **19 lis** – przycisk ganek + przedpokój: światło przedpokój 1 (ZHA) gubiło polecenie wyłączenia, więc ganek gasł, a przedpokój zostawał zapalony. Nowy skrypt `script.ganek_przedpokoj_ustaw` (stan on/off dla obu świateł, do 4 prób co 3 s) – używają go `script.ganek_przycisk_reczny` i `script.ganek_przedpokoj_2x_przelacz`. Pytanie otwarte: skrócić gaszenie po ruchu w przedpokoju do 1 min (teraz 5 min do 18:00, 2 min po 18:00)?
 
 ## To repozytorium
 - `panel.yaml` – konfiguracja ESPHome panelu Waveshare.
